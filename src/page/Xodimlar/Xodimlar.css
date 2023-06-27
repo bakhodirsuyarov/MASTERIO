@@ -1,0 +1,84 @@
+.employee{
+  margin-left: 260px;
+}
+
+.employee-cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.cart-inner{
+  width: 361px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.cart-inner img{
+  width: 100px;
+  height: 100px;
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+
+.cart-inner h3{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+.cart-inner h4{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+}
+
+.employee-btn{
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #9155fd;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.modal{
+  display: none;
+
+}
+
+.modal-wrapper{
+  display: flex;
+  align-items: center;
+  background-color: rgba(200,200,200, 0.8);
+  height: 80vh;
+  width: 100%;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-inner{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active-modal{
+  display: block;
+}

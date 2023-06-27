@@ -1,0 +1,59 @@
+.container {
+  width: 1500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 700px;
+  overflow-y: scroll;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.buyurtma_direktor_table {
+  width: 1130px;
+  height: 900px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 300px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.table_td_th {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(108, 96, 96, .8);
+}
+
+thead .th {
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(50, 48, 48, 0.8);
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody .tr:hover {
+  background-color: rgba(15, 14, 14, 0.2);
+}
+
+tbody .td {
+  position: relative;
+}
+
+tbody .td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
