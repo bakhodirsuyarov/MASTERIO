@@ -7,6 +7,7 @@ import DokonlarLogin from './page/Dokonlar/DokonlarLogin/DokonlarLogin';
 import Dokonlar from './page/Dokonlar/Dokonlar';
 import BuyurtmalarDirektor from './page/Buyurtmalar_direktor/BuyurtmalarDirektor';
 import Xodimlar from './page/Xodimlar/Xodimlar';
+import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/dokonlarlogin' element={<DokonlarLogin />} />
         <Route path='/dokonlar' element={<Dokonlar />} />
         <Route path='/buyurtmalar' element={<BuyurtmalarDirektor />} />
+        <Route path='/xodimlarlogin' element={<XodimlarLogin/>} />
         <Route path='/xodimlar' element={<Xodimlar />} />
       </Routes>
     </div>
