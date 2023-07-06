@@ -26,7 +26,7 @@ export  const direktorData = [
    },
    {
     title: "Xodimlar",
-    path: "/xodimlar",
+    path: "/xodimlarlogin",
     icon: <ImUserTie/>
    },
    {
