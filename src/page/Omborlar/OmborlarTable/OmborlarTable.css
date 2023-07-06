@@ -1,0 +1,70 @@
+.OmborlarTable {
+    width: 1500px;
+    max-height: 700px;
+    width: 1250px;
+    height: 610px;
+    margin-left: 694px;
+    margin-top: 342px;
+    overflow-y: scroll;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.TableOmbor {
+    width: 1180px;
+    height: 900px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.TablethOmbor {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(108, 96, 96, 0.8);
+}
+
+thead .TablethOmbor {
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(50, 48, 48, 0.8);
+}
+
+thead th {
+    background-color: #55608f;
+}
+
+tbody tr:hover {
+    background-color: rgba(15, 14, 14, 0.2);
+}
+
+tbody td {
+    position: relative;
+    padding-left: 15px;
+}
+
+tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.Edit_btnOmbor {
+    width: 60px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
