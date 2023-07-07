@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { employeeData } from './XodimlarData'
 import "./Xodimlar.css"
+import XodimlarModal from './XodimlarModal/XodimlarModal'
 
 export default function Xodimlar() {
 
@@ -9,7 +10,12 @@ export default function Xodimlar() {
   return (
     <div className='employee'>
 
-      <button onClick={() => setBtn(!btn)} className='employee-btn'>Add employee</button>
+      <button onClick={() => setBtn(true)} className='employee-btn'>Add employee</button>
+
+        {
+          btn && <XodimlarModal setOpenModal={setBtn}/>
+        }
+
       <div className="employee-cart">
         {
           employeeData.map((element, value) =>{
@@ -23,6 +29,7 @@ export default function Xodimlar() {
           })
         }
       </div>
+
 
 
     </div>
