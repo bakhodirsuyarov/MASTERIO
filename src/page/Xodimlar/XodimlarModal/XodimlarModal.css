@@ -1,0 +1,12 @@
+.XodimlarModalWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.XodimlarModal {
+  position: fixed;
+  /* z-index: 9999; */
+  margin-top: 500px;
+  background-color: rgba(100, 100, 100, 0.8);
+}
