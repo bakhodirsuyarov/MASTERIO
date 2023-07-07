@@ -1,66 +1,99 @@
-import React, { useState } from 'react'
-import { Table } from "../../../componentss/Table";
-import { Modal } from "../../../componentss/Modal";
+import React from 'react'
 import './Enteringthestore.css'
+import { useTable } from "react-table";
+import fakeData from "./MOCK_DATA.json";
 
 function Enteringthestore() {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [rows, setRows] = useState([
-        {
-            page: "Home",
-            description: "This is the main page of the website",
-            status: "",
-        },
-        {
-            page: "About Us",
-            description: "This page has details about the company",
-            status: "",
-        },
-        {
-            page: "Pricing",
-            description: "Prices for different subscriptions",
-            status: "",
-        },
-    ]);
-    const [rowToEdit, setRowToEdit] = useState(null);
+    const data = React.useMemo(() => fakeData, []);
+    const columns = React.useMemo(
+        () => [
+            {
+                Header: "Maxsulot nomi",
+                accessor: "mahsulot_nomi",
+            },
+            {
+                Header: "Maxsulot razmeri",
+                accessor: "mahsulot_razmeri",
+            },
+            {
+                Header: "Maxsulot rangi",
+                accessor: "mahsulot_rangi",
+            },
+            {
+                Header: "Maxsulot sotish narxi",
+                accessor: "mahsulot_sotish_narxi",
+            },
+            {
+                Header: "Maxsulot soni",
+                accessor: "mahsulot_soni",
+            },
+            {
+                Header: "Joylashgan joylari",
+                accessor: "joylashgan_joylari",
+            },
+        ],
+        []
+    );
 
-    const handleDeleteRow = (targetIndex) => {
-        setRows(rows.filter((_, idx) => idx !== targetIndex));
-    };
-
-    const handleEditRow = (idx) => {
-        setRowToEdit(idx);
-
-        setModalOpen(true);
-    };
-
-    const handleSubmit = (newRow) => {
-        rowToEdit === null
-            ? setRows([...rows, newRow])
-            : setRows(
-                rows.map((currRow, idx) => {
-                    if (idx !== rowToEdit) return currRow;
-
-                    return newRow;
-                })
-            );
-    };
+    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+        useTable({ columns, data });
     return (
         <div>
-            <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
-            <button onClick={() => setModalOpen(true)} className="btn">
-                Add
-            </button>
-            {modalOpen && (
-                <Modal
-                    closeModal={() => {
-                        setModalOpen(false);
-                        setRowToEdit(null);
-                    }}
-                    onSubmit={handleSubmit}
-                    defaultValue={rowToEdit !== null && rows[rowToEdit]}
-                />
-            )}
+            <div className="container">
+                <table {...getTableProps()}>
+                    <thead>
+                        {headerGroups.map((headerGroup) => (
+                            <tr {...headerGroup.getHeaderGroupProps()}>
+                                {headerGroup.headers.map((column) => (
+                                    <th {...column.getHeaderProps()}>
+                                        {column.render("Header")}
+                                    </th>
+                                ))}
+                            </tr>
+                        ))}
+                    </thead>
+                    <tbody {...getTableBodyProps()}>
+                        {rows.map((row) => {
+                            prepareRow(row);
+                            return (
+                                <tr {...row.getRowProps()}>
+                                    {row.cells.map((cell) => (
+                                        <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
+                                    ))}
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+            {/* ----------------------------------- */}
+            {/* <div className="container2">
+                <table {...getTableProps()}>
+                    <thead>
+                        {headerGroups.map((headerGroup) => (
+                            <tr {...headerGroup.getHeaderGroupProps()}>
+                                {headerGroup.headers.map((column) => (
+                                    <th {...column.getHeaderProps()}>
+                                        {column.render("Header")}
+                                    </th>
+                                ))}
+                            </tr>
+                        ))}
+                    </thead>
+                    <tbody {...getTableBodyProps()}>
+                        {rows.map((row) => {
+                            prepareRow(row);
+                            return (
+                                <tr {...row.getRowProps()}>
+                                    {row.cells.map((cell) => (
+                                        <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
+                                    ))}
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div> */}
         </div>
     )
 }

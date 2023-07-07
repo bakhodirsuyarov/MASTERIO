@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Dokonlar.css'
-import DokonlarModal from '../../DokonlarModal/DokonlarModal';
+import DokonlarModal from './DokonlarModal/DokonlarModal';
 import DokonlarTable from './DokonlarTable/DokonlarTable';
 
 function Dokonlar() {
