@@ -11,4 +11,6 @@
   color: rgba(255, 255, 255, 1);
   border-radius: 50px;
   cursor: pointer;
+  position: absolute;
+  top: 70px;
 }

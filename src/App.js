@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Sidebar from './component/Sidebar/Sidebar';
@@ -7,6 +7,8 @@ import DokonlarLogin from './page/Dokonlar/DokonlarLogin/DokonlarLogin';
 import Dokonlar from './page/Dokonlar/Dokonlar';
 import BuyurtmalarDirektor from './page/Buyurtmalar_direktor/BuyurtmalarDirektor';
 import Xodimlar from './page/Xodimlar/Xodimlar';
+import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
+import Omborlar from './page/Omborlar/Omborlar';
 import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path='/buyurtmalar' element={<BuyurtmalarDirektor />} />
         <Route path='/xodimlarlogin' element={<XodimlarLogin/>} />
         <Route path='/xodimlar' element={<Xodimlar />} />
+        <Route path='/enteringthestore' element={<Enteringthestore />} />
+        <Route path='/omborlar' element={<Omborlar />} />
       </Routes>
     </div>
   );

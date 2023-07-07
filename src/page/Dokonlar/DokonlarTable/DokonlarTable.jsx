@@ -2,8 +2,10 @@ import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import "./DokonlarTable.css";
 import fakeeData from "./DokonlarTableData.json";
+import { useNavigate } from "react-router-dom";
 
 const DokonlarTable = () => {
+    const navigate=useNavigate()
     const data = React.useMemo(() => fakeeData, []);
     const columns = React.useMemo(
         () => [
@@ -43,6 +45,10 @@ const DokonlarTable = () => {
         prepareRow,
     } = useTable({ columns, data });
 
+    const Enteringthestore = () => [
+        navigate('/enteringthestore')
+    ]
+
     return (
         <div>
             <div className="DokonlarTable">
@@ -58,12 +64,11 @@ const DokonlarTable = () => {
                             </tr>
                         ))}
                     </thead>
-
                     <tbody {...getTableBodyProps()}>
                         {rows.map((row) => {
                             prepareRow(row);
                             return (
-                                <tr {...row.getRowProps()}>
+                                <tr onClick={Enteringthestore} {...row.getRowProps()}>
                                     {row.cells.map((cell) => (
                                         <td className="Tableth tr" {...cell.getCellProps()}>{cell.render("Cell")}</td>
                                     ))}
