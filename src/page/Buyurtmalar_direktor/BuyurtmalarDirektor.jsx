@@ -41,7 +41,7 @@ const BuyurtmalarDirektor = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="containerr">
         <table {...getTableProps()} className="buyurtma_direktor_table">
           <thead>
             {headerGroups.map((headerGroup) => (
