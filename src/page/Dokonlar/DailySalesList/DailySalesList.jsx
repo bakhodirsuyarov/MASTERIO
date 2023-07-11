@@ -1,10 +1,8 @@
 import React from 'react'
-import DailySalesList from '../DailySalesList/DailySalesList';
 import { useTable } from "react-table";
 import fakeData from "../Enteringthestore/MOCK_DATA.json";
-import './Enteringthestore.css'
 
-function Enteringthestore() {
+function DailySalesList() {
     const data = React.useMemo(() => fakeData, []);
     const columns = React.useMemo(
         () => [
@@ -39,7 +37,7 @@ function Enteringthestore() {
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
         useTable({ columns, data });
     return (
-        <div>
+        <div className='DailySalesList'>
             <table className='table1' {...getTableProps()}>
                 <thead>
                     {headerGroups.map((headerGroup) => (
@@ -65,9 +63,8 @@ function Enteringthestore() {
                     })}
                 </tbody>
             </table>
-            <DailySalesList />
-        </div>
+        </div >
     )
 }
 
-export default Enteringthestore
+export default DailySalesList

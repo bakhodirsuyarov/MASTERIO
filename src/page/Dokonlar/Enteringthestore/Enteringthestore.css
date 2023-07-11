@@ -1,15 +1,15 @@
-.container {
-    height: 630px;
-    margin-top: 30px;
+.container1 {
+    margin-top: 100px;
+    margin-left: 900px;
+    width: 1220px;
     overflow-y: scroll;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-table {
+.table1 {
     width: 1230px;
-    margin-left: 253px;
-    height: 630px;
+    margin-left: 280px;
     margin-top: 50px;
     border-collapse: collapse;
     overflow: hidden;
@@ -28,7 +28,7 @@ th {
 thead th {
     width: 300px;
     background: var(--light-states-active-menu,
-    linear-gradient(270deg, #9155fd 0%, #c6a7fe 100%)) !important;
+            linear-gradient(270deg, #9155fd 0%, #c6a7fe 100%)) !important;
 }
 
 tbody tr:hover {
