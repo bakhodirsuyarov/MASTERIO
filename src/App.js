@@ -10,10 +10,6 @@ import Xodimlar from './page/Xodimlar/Xodimlar';
 import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
 import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
 import Omborlar from './page/Omborlar/Omborlar';
-import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
-import Omborlar from './page/Omborlar/Omborlar';
-import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
-
 
 function App() {
   return (
