@@ -29,7 +29,7 @@ function App() {
         <Route path='/omborlar' element={<Omborlar />} />
         <Route path='/kliyent' element={<Kliyentlar/>}/>
         <Route path='/buyurtmalar-paneli' element={<BuyurtmaDirektorClick/>}/>
-        <Route path='/whenselected' element={<Whenselected/>}/>
+        <Route path='/whenselected' element={<Whenselected />} />
       </Routes>
     </div>
   );

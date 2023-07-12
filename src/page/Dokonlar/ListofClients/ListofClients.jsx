@@ -1,37 +1,30 @@
 import React from 'react'
-import DailySalesList from '../DailySalesList/DailySalesList';
 import { useTable } from "react-table";
 import fakeData from "../Enteringthestore/MOCK_DATA.json";
-import './Enteringthestore.css'
-import ListofClients from '../ListofClients/ListofClients';
 
-function Enteringthestore() {
+function ListofClients() {
     const data = React.useMemo(() => fakeData, []);
     const columns = React.useMemo(
         () => [
             {
-                Header: "Maxsulot nomi",
+                Header: "Ismi",
                 accessor: "mahsulot_nomi",
             },
             {
-                Header: "Maxsulot razmeri",
+                Header: "Tel raqami",
                 accessor: "mahsulot_razmeri",
             },
             {
-                Header: "Maxsulot rangi",
+                Header: "Oxirgi sotib olgan narsasi",
                 accessor: "mahsulot_rangi",
             },
             {
-                Header: "Maxsulot sotish narxi",
+                Header: "Xabar berish oralig`i",
                 accessor: "mahsulot_sotish_narxi",
             },
             {
-                Header: "Maxsulot soni",
+                Header: "Holati",
                 accessor: "mahsulot_soni",
-            },
-            {
-                Header: "Joylashgan joylari",
-                accessor: "joylashgan_joylari",
             },
         ],
         []
@@ -40,7 +33,7 @@ function Enteringthestore() {
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
         useTable({ columns, data });
     return (
-        <div>
+        <div className='ListofClients'>
             <table className='table1' {...getTableProps()}>
                 <thead>
                     {headerGroups.map((headerGroup) => (
@@ -66,10 +59,8 @@ function Enteringthestore() {
                     })}
                 </tbody>
             </table>
-            <DailySalesList />
-            <ListofClients/>
         </div>
     )
 }
 
-export default Enteringthestore
+export default ListofClients

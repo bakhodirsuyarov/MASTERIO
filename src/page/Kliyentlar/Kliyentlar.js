@@ -16,7 +16,7 @@ function Kliyentlar() {
                 <h5>{element.xarid_oraligi}</h5> <span>|</span>
                 <h5>{element.oxirgi_xarid}</h5>
               </div>
-              <button className="kliyentEdit" type="button">Edit</button>
+              <button className="kliyentEdit" type="button">Tahrirlash</button>
             </div>
           );
         })}
