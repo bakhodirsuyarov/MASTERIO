@@ -1,7 +1,9 @@
 import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import "./BuyutmalarDirektor.css";
-import fakeData from "./BuyurtmalarDirektorData.json";
+import fakeData from "./BuyurtmalarDirektorData.js";
+import { useNavigate } from "react-router-dom";
+import BuyurtmaDirektorClick from "./BuyurtmaDirektorClick";
 
 const BuyurtmalarDirektor = () => {
   const data = React.useMemo(() => fakeData, []);
@@ -39,6 +41,10 @@ const BuyurtmalarDirektor = () => {
     prepareRow,
   } = useTable({ columns, data });
 
+  const navigate = useNavigate()
+  useNavigate(<BuyurtmaDirektorClick/>)
+
+
   return (
     <div>
       <div className="containerr">
@@ -59,7 +65,7 @@ const BuyurtmalarDirektor = () => {
             {rows.map((row) => {
               prepareRow(row);
               return (
-                <tr className=".tr" {...row.getRowProps()}>
+                <tr className="tr" {...row.getRowProps()} onClick={() => navigate(`/buyurtmalar-paneli/${row.id}`)}>
                   {row.cells.map((cell) => (
                     <td className="table_td_th td" {...cell.getCellProps()}>{cell.render("Cell")}</td>
                   ))}
