@@ -10,9 +10,8 @@ import Xodimlar from './page/Xodimlar/Xodimlar';
 import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
 import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
 import Omborlar from './page/Omborlar/Omborlar';
-import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
-import Omborlar from './page/Omborlar/Omborlar';
-import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
+import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorClick';
+import Kliyentlar from './page/Kliyentlar/Kliyentlar';
 
 
 function App() {
@@ -26,8 +25,10 @@ function App() {
         <Route path='/buyurtmalar' element={<BuyurtmalarDirektor />} />
         <Route path='/xodimlarlogin' element={<XodimlarLogin/>} />
         <Route path='/xodimlar' element={<Xodimlar />} />
-        <Route path='/enteringthestore' element={<Enteringthestore />} />
+        <Route path='/enteringthestore' element={ <Enteringthestore />} />
         <Route path='/omborlar' element={<Omborlar />} />
+        <Route path='/buyurtmalar-paneli' element= { <BuyurtmaDirektorClick/> }/>
+        <Route path='/kliyent' element= { <Kliyentlar/> }/>
       </Routes>
     </div>
   );

@@ -57,3 +57,23 @@ tbody .td:hover:before {
   background-color: rgba(255, 255, 255, 0.2);
   z-index: -1;
 }
+
+.mahsulotCard{
+  position: relative;
+  margin-left: 320px;
+  top: -50px;
+}
+
+.mahsulotAbout h4{
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  word-spacing: 5px;
+  line-height: 30px;
+}
+
+.mahsulotSpan{
+     font-size: 17px;
+     font-weight: 400;
+     color: rgb(92, 89, 89);
+}
