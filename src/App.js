@@ -10,6 +10,9 @@ import Xodimlar from './page/Xodimlar/Xodimlar';
 import XodimlarLogin from './page/Xodimlar/XodimlarLogin/XodimlarLogin';
 import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore';
 import Omborlar from './page/Omborlar/Omborlar';
+import Kliyentlar from './page/Kliyentlar/Kliyentlar';
+import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorClick';
+import Whenselected from './page/Omborlar/Whenselected/Whenselected';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
         <Route path='/xodimlar' element={<Xodimlar />} />
         <Route path='/enteringthestore' element={ <Enteringthestore />} />
         <Route path='/omborlar' element={<Omborlar />} />
+        <Route path='/kliyent' element={<Kliyentlar/>}/>
+        <Route path='/buyurtmalar-paneli' element={<BuyurtmaDirektorClick/>}/>
+        <Route path='/whenselected' element={<Whenselected/>}/>
       </Routes>
     </div>
   );

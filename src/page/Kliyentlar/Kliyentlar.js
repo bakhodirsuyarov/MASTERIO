@@ -13,7 +13,7 @@ function Kliyentlar() {
               <h3 className="kliyentIsm">{element.ism}</h3>
               <h4 className="kliyentPhone">{element.phone}</h4>
               <div className="kliyentXrd">
-                <h5>{element.xarid_oraligi}</h5> <span>|</span> 
+                <h5>{element.xarid_oraligi}</h5> <span>|</span>
                 <h5>{element.oxirgi_xarid}</h5>
               </div>
               <button className="kliyentEdit" type="button">Edit</button>
