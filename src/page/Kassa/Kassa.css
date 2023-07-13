@@ -1,0 +1,54 @@
+.Kassa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding: 0 300px;
+}
+
+.Kassa_card {
+    display: flex;
+    align-items: center;
+    margin-top: 350px;
+    margin-left: 90px;
+}
+
+.Kassa_cards {
+    width: 280px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid rgba(145, 85, 253, 1);
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.ucer_img {
+    margin-top: 400px;
+    margin-left: 50px;
+    background-color: rgba(244, 245, 250, 1);
+}
+
+.Kassa_cards_h1 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(58, 53, 65, 0.87);
+    margin: 40px 0;
+}
+
+.Kassa_cards_h2 {
+    color: rgba(145, 85, 253, 1);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.Kassa_cards_input {
+    cursor: pointer;
+}

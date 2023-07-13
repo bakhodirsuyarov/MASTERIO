@@ -67,7 +67,7 @@ function Enteringthestore() {
                 </tbody>
             </table>
             <DailySalesList />
-            <ListofClients/>
+            <ListofClients />
         </div>
     )
 }

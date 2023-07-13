@@ -21,6 +21,6 @@ function Dokonlar() {
       <DokonlarTable />
     </div>
   )
-}
 
+}
 export default Dokonlar
