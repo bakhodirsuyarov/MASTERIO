@@ -13,8 +13,8 @@ import Omborlar from './page/Omborlar/Omborlar';
 import Kliyentlar from './page/Kliyentlar/Kliyentlar';
 import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorClick';
 import Whenselected from './page/Omborlar/Whenselected/Whenselected';
-import Maxsulotlar from './page/maxsulotlar/Maxsulotlar'
 import Kassa from './page/Kassa/Kassa';
+import Maxsulotlar from './page/maxsulotlar/Maxsulotlar';
 
 function App() {
   return (
