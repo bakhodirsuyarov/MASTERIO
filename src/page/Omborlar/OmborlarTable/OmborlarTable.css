@@ -1,67 +1,66 @@
-.O  mborlartable {
-    width: 1240px;
-    height: 900px;
-    border-collapse: collapse;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-align: left;
-    margin-left: 17px;
-  }
-  
-  .Tableth {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgb(108, 96, 96, 0.8);
-  }
-  
-  thead .Tableth {
-    text-align: left;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: rgba(50, 48, 48, 0.8);
-  }
-  
-  thead th {
-    background-color: #55608f;
-  }
-  
-  tbody tr:hover {
-    background-color: rgba(15, 14, 14, 0.2);
-  }
-  
-  tbody td {
-    position: relative;
-    padding-left: 15px;
-  }
-  
-  tbody td:hover:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -9999px;
-    bottom: -9999px;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-  }
-  
-  .Edit_btn {
-    width: 60px;
-    height: 30px;
-    border: none;
-    background-color: blue;
-    color: white;
-    border-radius: 50px;
-    cursor: pointer;
-  }
+.TableOmbor {
+  height: 900px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: left;
+  margin-left: 280px;
+}
+
+.Tableth {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(108, 96, 96, 0.8);
+}
+
+thead .Tableth {
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(50, 48, 48, 0.8);
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr:hover {
+  background-color: rgba(15, 14, 14, 0.2);
+}
+
+tbody td {
+  position: relative;
+  padding-left: 15px;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+.Edit_btn {
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
 .Edit_btnOmbor {
-    width: 60px;
-    height: 30px;
-    border: none;
-    background-color: blue;
-    color: white;
-    border-radius: 50px;
-    cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
 }
