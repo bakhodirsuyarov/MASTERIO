@@ -7,108 +7,108 @@ import { ImUserTie } from "react-icons/im";
 import { FaRegUserCircle, FaShopify } from "react-icons/fa";
 import { PiUsersThreeLight, PiWarehouseDuotone } from "react-icons/pi"
 
-export  const direktorData = [
-    // DIREKTOR PANEL MENU
-   {
+export const direktorData = [
+  // DIREKTOR PANEL MENU
+  {
     title: "Bosh sahifa ",
     path: "/",
-    icon: <AiOutlineHome/>
-   },
-   {
+    icon: <AiOutlineHome />
+  },
+  {
     title: "Tushumlar ",
     path: "/tushumlar",
-    icon: <BsCartPlus/>
-   },
-   {
+    icon: <BsCartPlus />
+  },
+  {
     title: "Harajatlar",
     path: "/harajatlar",
-    icon: <BsCartDash/>
-   },
-   {
+    icon: <BsCartDash />
+  },
+  {
     title: "Xodimlar",
     path: "/xodimlarlogin",
-    icon: <ImUserTie/>
-   },
-   {
+    icon: <ImUserTie />
+  },
+  {
     title: "Do’konlar",
     path: "/dokonlarlogin",
-    icon: <LiaStoreAltSolid/>
-   },
-   {
+    icon: <LiaStoreAltSolid />
+  },
+  {
     title: "Omborlar",
     path: "/omborlar",
-    icon: <LiaWarehouseSolid/>
-   },
-   {
+    icon: <LiaWarehouseSolid />
+  },
+  {
     title: "Maxsulotlar",
     path: "/mahsulotlar",
-    icon: <TbCircleLetterM/>
-   },
-   {
+    icon: <TbCircleLetterM />
+  },
+  {
     title: "Buyurtmalar",
     path: "/buyurtmalar",
-    icon: <BsTruck/>
-   },
-   {
+    icon: <BsTruck />
+  },
+  {
     title: "Kassa",
     path: "/kassa",
-    icon: <LiaMoneyCheckAltSolid/>
+    icon: <LiaMoneyCheckAltSolid />
 
-   },
-   {
+  },
+  {
     title: "Kliyentlar",
     path: "/kliyent",
-    icon: <FaRegUserCircle/>
-   },
-   {
+    icon: <FaRegUserCircle />
+  },
+  {
     title: "Valyutalar",
     path: "/valyutalar",
-    icon: <AiOutlineDollar/>
-   }
+    icon: <AiOutlineDollar />
+  }
 ]
 
-export const  magazinData = [
+export const magazinData = [
   //MAGAZIN PANEL MENU
 
   {
     mTitle: "Sotuv",
     path: "/sotuv",
-    micon: <FaShopify/>
+    micon: <FaShopify />
   },
   {
-   mTitle: "Kliyent baza",
-   path: "/baza",
-   micon: <PiUsersThreeLight/>
- },
- {
-   mTitle: "Maxsulot qoldiqlari",
-   path: "/qoldiqlar",
-   micon: <BsTrash3/>
- },
- {
-  mTitle: "Omborga buyurtmalar",
-   path: "/omborbuyurtmalar",
-   micon: <PiWarehouseDuotone/>
- }
+    mTitle: "Kliyent baza",
+    path: "/baza",
+    micon: <PiUsersThreeLight />
+  },
+  {
+    mTitle: "Maxsulot qoldiqlari",
+    path: "/qoldiqlar",
+    micon: <BsTrash3 />
+  },
+  {
+    mTitle: "Omborga buyurtmalar",
+    path: "/omborbuyurtmalar",
+    micon: <PiWarehouseDuotone />
+  }
 ]
 
 
 export const omborData = [
-     // OMBOR PANEL MENU
+  // OMBOR PANEL MENU
 
   {
     oTitle: "Ombordagi maxsulotlar",
-    path: "/ombormaxsulotlar",
-    oicon: <TbBuildingWarehouse/>
+    path: "/ombordagimaxsulotlar",
+    oicon: <TbBuildingWarehouse />
   },
   {
     oTitle: "Buyurtmalar(ombor)",
-    path: "/buyurtmalar-ombor",
-    oicon: <BsTruck/>
+    path: "/omborgabuyurtma",
+    oicon: <BsTruck />
   },
   {
     oTitle: "Maxsulotlar tarixi",
     path: "/maxsulotlartarixi",
-    oicon: <LiaHistorySolid/>
+    oicon: <LiaHistorySolid />
   }
 ]

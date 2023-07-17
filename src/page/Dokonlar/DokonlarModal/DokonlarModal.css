@@ -109,15 +109,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.Createbtn {
-  width: 150px;
-  height: 45px;
-  margin: 10px;
-  border: none;
-  background-color: rgba(145, 85, 253, 1);
-  color: white;
-  border-radius: 8px;
-  font-size: 20px;
-  cursor: pointer;
-}

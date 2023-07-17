@@ -15,6 +15,9 @@ import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorC
 import Whenselected from './page/Omborlar/Whenselected/Whenselected';
 import Kassa from './page/Kassa/Kassa';
 import Maxsulotlar from './page/maxsulotlar/Maxsulotlar';
+import OmbordagiMahsulotlar from './page/OmborlarPaneli/OmbordagiMahsulotlar/OmbordagiMahsulotlar';
+import Buyurtmalar from './page/OmborlarPaneli/Buyurtmalar/Buyurtmalar';
+import Relesedproducts from './page/OmborlarPaneli/Relesedproducts/Relesedproducts';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
         <Route path='/whenselected' element={<Whenselected />} />
         <Route path='/mahsulotlar' element={<Maxsulotlar />} />
         <Route path='/kassa' element={<Kassa />} />
+        <Route path='/ombordagimaxsulotlar' element={< OmbordagiMahsulotlar />} />
+        <Route path='/omborgabuyurtma' element={< Buyurtmalar />} />
+        <Route path='/maxsulotlartarixi' element={< Relesedproducts/>} />
       </Routes>
     </div>
   );
