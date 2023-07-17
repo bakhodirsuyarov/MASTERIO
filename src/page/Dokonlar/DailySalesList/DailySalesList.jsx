@@ -30,6 +30,10 @@ function DailySalesList() {
                 Header: "Joylashgan joylari",
                 accessor: "joylashgan_joylari",
             },
+            {
+                Header: "Client",
+                accessor: "client",
+            },
         ],
         []
     );

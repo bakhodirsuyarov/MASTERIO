@@ -17,6 +17,7 @@ import Tushumlar from './page/Tushumlar/Tushumlar';
 import KliyentMagzain from './page/KliyentMagazin/KliyentMagzain';
 import BuyurtmaMagazin from './page/BuyurtmaMagzin/BuyurtmaMagazin';
 
+
 function App() {
   return (
     <div className="App">
@@ -28,7 +29,7 @@ function App() {
         <Route path='/buyurtmalar' element={<BuyurtmalarDirektor />} />
         <Route path='/xodimlarlogin' element={<XodimlarLogin />} />
         <Route path='/xodimlar' element={<Xodimlar />} />
-        <Route path='/enteringthestore' element={ <Enteringthestore />} />
+        <Route path='/enteringthestore' element={<Enteringthestore />} />
         <Route path='/omborlar' element={<Omborlar />} />
         <Route path='/kliyent' element={<Kliyentlar/>}/>
         <Route path='/buyurtmalar-paneli' element={<BuyurtmaDirektorClick/>}/>

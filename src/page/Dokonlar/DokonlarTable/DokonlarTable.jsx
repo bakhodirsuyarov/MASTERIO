@@ -5,7 +5,7 @@ import fakeeData from "./DokonlarTableData.json";
 import { useNavigate } from "react-router-dom";
 
 const DokonlarTable = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const data = React.useMemo(() => fakeeData, []);
     const columns = React.useMemo(
         () => [
@@ -51,34 +51,31 @@ const DokonlarTable = () => {
 
     return (
         <div>
-            <div className="DokonlarTable">
-                <table {...getTableProps()} className="Table">
-                    <thead>
-                        {headerGroups.map((headerGroup) => (
-                            <tr {...headerGroup.getHeaderGroupProps()}>
-                                {headerGroup.headers.map((column) => (
-                                    <th className="Tableth" {...column.getHeaderProps()}>
-                                        {column.render("Header")}
-                                    </th>
+            <table className='dokonlartable' {...getTableProps()}>
+                <thead>
+                    {headerGroups.map((headerGroup) => (
+                        <tr {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map((column) => (
+                                <th {...column.getHeaderProps()}>
+                                    {column.render("Header")}
+                                </th>
+                            ))}
+                        </tr>
+                    ))}
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                    {rows.map((row) => {
+                        prepareRow(row);
+                        return (
+                            <tr onClick={Enteringthestore} {...row.getRowProps()}>
+                                {row.cells.map((cell) => (
+                                    <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
                                 ))}
                             </tr>
-                        ))}
-                    </thead>
-                    <tbody {...getTableBodyProps()}>
-                        {rows.map((row) => {
-                            prepareRow(row);
-                            return (
-                                <tr onClick={Enteringthestore} {...row.getRowProps()}>
-                                    {row.cells.map((cell) => (
-                                        <td className="Tableth tr" {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                                    ))}
-                                    <button className="Edit_btn">Edit</button>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
-            </div>
+                        );
+                    })}
+                </tbody>
+            </table>
         </div>
     );
 };

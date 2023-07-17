@@ -20,7 +20,7 @@ function Whenselected() {
                 accessor: "mahsulot_rangi",
             },
             {
-                Header: "Maxsulot sotish narxi",
+                Header: "Joylashgan joylari",
                 accessor: "mahsulot_sotish_narxi",
             },
             {
@@ -28,9 +28,13 @@ function Whenselected() {
                 accessor: "mahsulot_soni",
             },
             {
-                Header: "Joylashgan joylari",
+                Header: "Sotish narxi",
                 accessor: "joylashgan_joylari",
             },
+            {
+                Header: "Kirib kelgan narxi",
+                accessor: "kirib_kelgan_narxi"
+            }
         ],
         []
     );
@@ -39,33 +43,31 @@ function Whenselected() {
         useTable({ columns, data });
     return (
         <div className='Whenselected'>
-            <div className="container">
-                <table {...getTableProps()}>
-                    <thead>
-                        {headerGroups.map((headerGroup) => (
-                            <tr {...headerGroup.getHeaderGroupProps()}>
-                                {headerGroup.headers.map((column) => (
-                                    <th {...column.getHeaderProps()}>
-                                        {column.render("Header")}
-                                    </th>
+            <table {...getTableProps()}>
+                <thead>
+                    {headerGroups.map((headerGroup) => (
+                        <tr {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map((column) => (
+                                <th {...column.getHeaderProps()}>
+                                    {column.render("Header")}
+                                </th>
+                            ))}
+                        </tr>
+                    ))}
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                    {rows.map((row) => {
+                        prepareRow(row);
+                        return (
+                            <tr {...row.getRowProps()}>
+                                {row.cells.map((cell) => (
+                                    <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
                                 ))}
                             </tr>
-                        ))}
-                    </thead>
-                    <tbody {...getTableBodyProps()}>
-                        {rows.map((row) => {
-                            prepareRow(row);
-                            return (
-                                <tr {...row.getRowProps()}>
-                                    {row.cells.map((cell) => (
-                                        <td {...cell.getCellProps()}> {cell.render("Cell")} </td>
-                                    ))}
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table>
-            </div>
+                        );
+                    })}
+                </tbody>
+            </table>
         </div>
     )
 }
