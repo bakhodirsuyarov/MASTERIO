@@ -4,7 +4,7 @@
     width: 1250px;
     height: 610px;
     margin-left: 894px;
-    margin-top: 230px;
+    margin-top: 270px;
     overflow-y: scroll;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -20,6 +20,7 @@
     cursor: pointer;
     text-align: left;
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 .TablethOmbor {

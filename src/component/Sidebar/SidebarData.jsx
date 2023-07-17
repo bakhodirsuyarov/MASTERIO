@@ -77,7 +77,7 @@ export const  magazinData = [
   },
   {
    mTitle: "Kliyent baza",
-   path: "/baza",
+   path: "/kliyent_baza",
    micon: <PiUsersThreeLight/>
  },
  {
@@ -87,7 +87,7 @@ export const  magazinData = [
  },
  {
   mTitle: "Omborga buyurtmalar",
-   path: "/omborbuyurtmalar",
+   path: "/omborgabuyurtmalar",
    micon: <PiWarehouseDuotone/>
  }
 ]

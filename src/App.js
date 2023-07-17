@@ -13,6 +13,9 @@ import Omborlar from './page/Omborlar/Omborlar';
 import Kliyentlar from './page/Kliyentlar/Kliyentlar';
 import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorClick';
 import Whenselected from './page/Omborlar/Whenselected/Whenselected';
+import Tushumlar from './page/Tushumlar/Tushumlar';
+import KliyentMagzain from './page/KliyentMagazin/KliyentMagzain';
+import BuyurtmaMagazin from './page/BuyurtmaMagzin/BuyurtmaMagazin';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
         <Route path='/kliyent' element={<Kliyentlar/>}/>
         <Route path='/buyurtmalar-paneli' element={<BuyurtmaDirektorClick/>}/>
         <Route path='/whenselected' element={<Whenselected/>}/>
+        <Route path='/tushumlar' element = { <Tushumlar/>} />
+        <Route path='/kliyent_baza' element= { <KliyentMagzain/>}/>
+        <Route path='/omborgabuyurtmalar' element= { <BuyurtmaMagazin/> }/>
       </Routes>
     </div>
   );

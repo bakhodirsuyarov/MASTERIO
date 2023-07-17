@@ -12,3 +12,26 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #F4F5FA;
 }
+
+/* ------- custom scrollbar------ */
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background: linear-gradient(rgb(189, 98, 231) ,#815af5) ;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  scrollbar-width: none;
+}
