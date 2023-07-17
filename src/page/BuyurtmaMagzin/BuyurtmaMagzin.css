@@ -1,0 +1,130 @@
+.BuyurtmaMagazinCard {
+    width: 1200px;
+    margin-left: 300px;
+}
+
+.BuyurtmaMagazinBox {
+    background-color: white;
+    padding: 50px 0px;
+    box-shadow: 7px 7px 7px 4px rgb(198, 197, 201);
+    border-radius: 15px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.BuyurtmaMagazinBox:hover {
+    background-color: rgb(240, 236, 247);
+    transform: scale(1.003);
+    box-shadow: 7px 7px 7px 4px rgba(145, 85, 253, 1);
+
+}
+
+.BuyurtmaMagazinBox_h1 {
+    font-weight: 700;
+    color: rgba(145, 85, 253, 1);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(94, 29, 213);
+}
+
+.BuyurtmaSpan {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(111, 107, 107);
+}
+
+.BuyurtmaMagazinForm {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.BuyurtmaMagazinInput {
+    margin-bottom: 20px;
+    border: 2px solid rgba(145, 85, 253, 1);
+    border-radius: 5px;
+    padding: 12px 20px;
+    outline: none;
+    color: rgb(95, 37, 203);
+    font-size: 17px;
+}
+
+.BuyurtmaMagazinInput::placeholder {
+    color: rgb(37, 36, 36);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.BuyurtmaMagazinButton {
+    width: 40%;
+    margin: auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: rgba(145, 85, 253, 1);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.BuyurtmaMagazinButton:hover {
+    background-color: white;
+    color: rgba(145, 85, 253, 1);
+    box-shadow: 2px 2px 2px 0px rgba(145, 85, 253, 1);
+}
+
+
+
+.BuurtmaMagazinTable {
+    border-collapse: collapse;
+    width: 99%;
+    cursor: pointer;
+    overflow-y: scroll;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.BuyurtmaMagazinTableCard {
+    margin-left: 304px;
+    margin-top: 50px;
+}
+
+.BuyurtmaMagazinTableCard {
+    width: 1200px;
+    margin-left: 300px;
+    box-shadow: 7px 7px 7px 4px rgb(198, 197, 201);
+    border-radius: 16px;
+    margin-bottom: 30px;
+    height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.BuyurtmaMagazinTableCard::-webkit-scrollbar{
+    display: none;
+}
+.BuyurtmaMagazinTableCard:hover {
+    background-color: rgb(240, 236, 247);
+    transform: scale(1.003);
+    box-shadow: 7px 7px 7px 4px rgba(145, 85, 253, 1);
+}
+
+.BuurtmaMagazinTable {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.BuyurtmaMagazinTable_h1 {
+    font-weight: 700;
+    color: rgba(145, 85, 253, 1);
+    text-shadow: 1px 1px 1px rgb(94, 29, 213);
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 260px;
+    text-align: center;
+}

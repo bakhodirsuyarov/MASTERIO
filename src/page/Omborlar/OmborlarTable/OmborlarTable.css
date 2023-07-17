@@ -1,3 +1,28 @@
+
+.OmborlarTable {
+    width: 1500px;
+    max-height: 700px;
+    width: 1250px;
+    height: 610px;
+    margin-left: 894px;
+    margin-top: 270px;
+    overflow-y: scroll;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.TableOmbor {
+    width: 1180px;
+    height: 900px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
 .TableOmbor {
   height: 900px;
   border-collapse: collapse;

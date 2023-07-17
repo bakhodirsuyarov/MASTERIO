@@ -1,0 +1,46 @@
+.tushumlarTable {
+    border-collapse: collapse;
+    width: 99%;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+
+.tushumlarCard {
+    margin-left: 300px;
+    height: 100vh;
+}
+
+.tushumlarForm {
+    width: 99%;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 7px;
+}
+
+.tushumlarForm svg {
+    margin-left: 10px;
+    color: #060606 !important;
+
+}
+
+.tushumlarInput {
+    width: 97%;
+    padding: 15px 20px;
+    background-color: rgb(227, 227, 227);
+    outline: none;
+    border: none;
+}
+
+.tushumlarInput::placeholder {
+    font-size: 16px;
+    color: #060606;
+    cursor: all-scroll;
+}
+
+.tushumlarTh{
+    font-size: 20px;
+    font-weight: 500;
+    color: #060606;
+}   

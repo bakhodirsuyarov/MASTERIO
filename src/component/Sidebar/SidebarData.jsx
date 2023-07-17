@@ -76,20 +76,20 @@ export const magazinData = [
     micon: <FaShopify />
   },
   {
-    mTitle: "Kliyent baza",
-    path: "/baza",
-    micon: <PiUsersThreeLight />
-  },
-  {
-    mTitle: "Maxsulot qoldiqlari",
-    path: "/qoldiqlar",
-    micon: <BsTrash3 />
-  },
-  {
-    mTitle: "Omborga buyurtmalar",
-    path: "/omborbuyurtmalar",
-    micon: <PiWarehouseDuotone />
-  }
+   mTitle: "Kliyent baza",
+   path: "/kliyent_baza",
+   micon: <PiUsersThreeLight/>
+ },
+ {
+   mTitle: "Maxsulot qoldiqlari",
+   path: "/qoldiqlar",
+   micon: <BsTrash3/>
+ },
+ {
+  mTitle: "Omborga buyurtmalar",
+   path: "/omborgabuyurtmalar",
+   micon: <PiWarehouseDuotone/>
+ }
 ]
 
 

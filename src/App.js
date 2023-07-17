@@ -12,7 +12,7 @@ import Enteringthestore from './page/Dokonlar/Enteringthestore/Enteringthestore'
 import Omborlar from './page/Omborlar/Omborlar';
 import Kliyentlar from './page/Kliyentlar/Kliyentlar';
 import BuyurtmaDirektorClick from './page/Buyurtmalar_direktor/BuyurtmaDirektorClick';
-import Whenselected from './page/Omborlar/Whenselected/Whenselected';
+import Whenselected from './page/Omborlar/Whenselected/Whenselected'
 import Kassa from './page/Kassa/Kassa';
 import Maxsulotlar from './page/maxsulotlar/Maxsulotlar';
 import OmbordagiMahsulotlar from './page/OmborlarPaneli/OmbordagiMahsulotlar/OmbordagiMahsulotlar';
