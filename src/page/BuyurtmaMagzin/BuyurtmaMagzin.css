@@ -1,6 +1,6 @@
 .BuyurtmaMagazinCard {
-    width: 1200px;
     margin-left: 300px;
+    margin-right:22px;
 }
 
 .BuyurtmaMagazinBox {
@@ -95,7 +95,7 @@
 }
 
 .BuyurtmaMagazinTableCard {
-    width: 1200px;
+    margin-right: 22px;
     margin-left: 300px;
     box-shadow: 7px 7px 7px 4px rgb(198, 197, 201);
     border-radius: 16px;

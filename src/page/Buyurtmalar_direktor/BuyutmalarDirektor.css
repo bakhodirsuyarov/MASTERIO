@@ -1,27 +1,25 @@
 .containerr {
-  width: 1500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-height: 700px;
+  height: 800px;
   overflow-y: scroll;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-
 }
 
 .buyurtma_direktor_table {
-  width: 1130px;
-  height: 900px;
   border-collapse: collapse;
+  box-shadow: 7px 7px 7px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin-left: 300px;
   cursor: pointer;
+  margin-left: 350px;
   margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+
 }
+
+.buyurtma_direktor_table:hover{
+  box-shadow: 7px 7px 7px 4px rgba(145, 85, 253, 1);
+}
+
 
 .table_td_th {
   padding: 15px;

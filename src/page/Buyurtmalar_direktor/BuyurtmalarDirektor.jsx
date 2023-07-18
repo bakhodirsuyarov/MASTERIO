@@ -33,48 +33,49 @@ const BuyurtmalarDirektor = () => {
     []
   );
 
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
-  } = useTable({ columns, data });
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({ columns, data });
 
-  const navigate = useNavigate()
-  useNavigate(<BuyurtmaDirektorClick/>)
-
+  const navigate = useNavigate();
+  useNavigate(<BuyurtmaDirektorClick />);
 
   return (
     <div>
-      <div className="containerr">
-        <table {...getTableProps()} className="buyurtma_direktor_table">
-          <thead>
-            {headerGroups.map((headerGroup) => (
-              <tr className=".tr" {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map((column) => (
-                  <th className="table_td_th th" {...column.getHeaderProps()}>
-                    {column.render("Header")}
-                  </th>
+    <div className="containerr">
+    <table {...getTableProps()} className="buyurtma_direktor_table">
+        <thead>
+          {headerGroups.map((headerGroup) => (
+            <tr className=".tr" {...headerGroup.getHeaderGroupProps()}>
+              {headerGroup.headers.map((column) => (
+                <th className="table_td_th th" {...column.getHeaderProps()}>
+                  {column.render("Header")}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+
+        <tbody {...getTableBodyProps()}>
+          {rows.map((row) => {
+            prepareRow(row);
+            return (
+              <tr
+                className="tr"
+                {...row.getRowProps()}
+                onClick={() => navigate(`/buyurtmalar-paneli/${row.id}`)}
+              >
+                {row.cells.map((cell) => (
+                  <td className="table_td_th td" {...cell.getCellProps()}>
+                    {cell.render("Cell")}
+                  </td>
                 ))}
               </tr>
-            ))}
-          </thead>
-
-          <tbody {...getTableBodyProps()}>
-            {rows.map((row) => {
-              prepareRow(row);
-              return (
-                <tr className="tr" {...row.getRowProps()} onClick={() => navigate(`/buyurtmalar-paneli/${row.id}`)}>
-                  {row.cells.map((cell) => (
-                    <td className="table_td_th td" {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                  ))}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    
     </div>
   );
 };
