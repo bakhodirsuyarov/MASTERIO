@@ -1,0 +1,9 @@
+.ClikedProductsTable {
+    border-collapse: collapse;
+    width: 99%;
+    cursor: pointer;
+    overflow-y: scroll;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+}

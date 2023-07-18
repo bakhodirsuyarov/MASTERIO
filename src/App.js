@@ -19,8 +19,12 @@ import OmbordagiMahsulotlar from './page/OmborlarPaneli/OmbordagiMahsulotlar/Omb
 import Buyurtmalar from './page/OmborlarPaneli/Buyurtmalar/Buyurtmalar';
 import Relesedproducts from './page/OmborlarPaneli/Relesedproducts/Relesedproducts';
 import KliyentMagzain from './page/KliyentMagazin/KliyentMagzain';
-import BuyurtmaMagazin from './page/BuyurtmaMagzin/BuyurtmaMagazin';
 import Tushumlar from './page/Tushumlar/Tushumlar';
+import BuyurtmaMagazin from './page/BuyurtmaMagzin/BuyurtmaMagazin';
+import Whenpressed from './page/Omborlar/MahsulotlarRoyhati/Whenpressed/Whenpressed';
+import ClickedProducts from './page/Omborlar/OmborgaBuyurtma/clickedProducts/ClickedProducts';
+import Sotuv from './page/Sotuv/Sotuv';
+import Savdo from './page/savdo/Savdo';
 
 function App() {
   return (
@@ -41,6 +45,8 @@ function App() {
         <Route path='/whenselected' element={<Whenselected />} />
         <Route path='/mahsulotlar' element={<Maxsulotlar />} />
         <Route path='/kassa' element={<Kassa />} />
+        <Route path='/Whenpressed' element={<Whenpressed />} />
+        <Route path='/clickedProducts' element={<ClickedProducts />} />
         {/* Omborlar Paneli */}
         <Route path='/ombordagimaxsulotlar' element={< OmbordagiMahsulotlar />} />
         <Route path='/omborgabuyurtma' element={< Buyurtmalar />} />
@@ -48,6 +54,8 @@ function App() {
         {/* Dokonlar Paneli */}
         <Route path='/kliyent_baza' element={<KliyentMagzain />} />
         <Route path='/omborgabuyurtmalar' element={<BuyurtmaMagazin />} />
+        <Route path='/sotuv' element={<Sotuv />} />
+        <Route path='/qoldiqlar' element={<Savdo />} />
       </Routes>
     </div>
   );

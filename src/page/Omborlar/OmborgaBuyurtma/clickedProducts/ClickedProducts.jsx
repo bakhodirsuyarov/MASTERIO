@@ -1,22 +1,18 @@
 import React from 'react'
-import './Whenselected.css'
-import buyurtmaMagazinData from '../../BuyurtmaMagzin/BuyurtmaMagazinData';
-import MahsulotlarRoyhati from '../MahsulotlarRoyhati/MahsulotlarRoyhati';
-import OmborgaBuyurtma from '../OmborgaBuyurtma/OmborgaBuyurtma';
+import buyurtmaMagazinData from '../../../BuyurtmaMagzin/BuyurtmaMagazinData';
 
-function Whenselected() {
+function ClickedProducts() {
     return (
-        <div className='Whenselected'>
-            <table className="BuurtmaMagazinTable">
+        <div className='ClickedProducts'>
+            <table className="ClikedProductsTable">
                 <thead>
-                    <tr className='Tr'>
+                    <tr>
                         <th className="tushumlarTh">Maxsulot nomi</th>
                         <th className="tushumlarTh">Razmeri</th>
                         <th className="tushumlarTh">Rangi</th>
-                        <th className="tushumlarTh">Joylashgan joylari</th>
+                        <th className="tushumlarTh">Sanasi</th>
                         <th className="tushumlarTh">Soni</th>
-                        <th className="tushumlarTh">Sotish narxi</th>
-                        <th className="tushumlarTh">Kirib kelgan narxi</th>
+                        <th className="tushumlarTh">Tushgan soni</th>
                     </tr>
                 </thead>
 
@@ -30,16 +26,13 @@ function Whenselected() {
                                 <td> {element.maxsulot_soni} </td>
                                 <td> {element.holati} </td>
                                 <td> {element.maxsulot_olchami} </td>
-                                <td> {element.holati} </td>
                             </tr>
                         );
                     })}
                 </tbody>
             </table>
-            <MahsulotlarRoyhati />
-            <OmborgaBuyurtma />
-        </div>
+        </div >
     )
 }
 
-export default Whenselected
+export default ClickedProducts
