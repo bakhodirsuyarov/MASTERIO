@@ -1,0 +1,10 @@
+.BuyurtmalarModalOpenbtn{
+    margin-left: 1750px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: rgba(145, 85, 253, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    cursor: pointer; 
+}

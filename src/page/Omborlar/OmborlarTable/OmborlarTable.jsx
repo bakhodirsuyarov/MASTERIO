@@ -1,80 +1,43 @@
 import React from 'react'
-import { useTable } from "react-table";
-import fakeeData from "../../Dokonlar/DokonlarTable/DokonlarTableData.json";
 import './OmborlarTable.css'
 import { useNavigate } from 'react-router-dom';
+import buyurtmaMagazinData from '../../BuyurtmaMagzin/BuyurtmaMagazinData';
 
 function OmborlarTable() {
     const navigate = useNavigate()
     const whenselected = () => {
         navigate("/Whenselected")
     }
-    const data = React.useMemo(() => fakeeData, []);
-    const columns = React.useMemo(
-        () => [
-            {
-                Header: "Dokon nomi",
-                accessor: "dokon_nomi",
-            },
-            {
-                Header: "Manzili",
-                accessor: "manzili",
-            },
-            {
-                Header: "Mahsulot soni",
-                accessor: "mahsulot_soni",
-            },
-            {
-                Header: "Savdosi",
-                accessor: "savdosi",
-            },
-            {
-                Header: "Valyutasi",
-                accessor: "valyutasi",
-            },
-            {
-                Header: "Xodimlar soni",
-                accessor: "xodimlar_soni",
-            },
-        ],
-        []
-    );
-
-    const {
-        getTableProps,
-        getTableBodyProps,
-        headerGroups,
-        rows,
-        prepareRow,
-    } = useTable({ columns, data });
     return (
-        <div className='OmborlarTable'>
-            <table {...getTableProps()} className="TableOmbor">
-                <thead>
-                    {headerGroups.map((headerGroup) => (
-                        <tr {...headerGroup.getHeaderGroupProps()}>
-                            {headerGroup.headers.map((column) => (
-                                <th className="TablethOmbor" {...column.getHeaderProps()}>
-                                    {column.render("Header")}
-                                </th>
-                            ))}
+        <div>
+            <div className="OmborlarTable">
+                <table className="BuurtmaMagazinTable">
+                    <thead>
+                        <tr className='Tr'>
+                            <th className="tushumlarTh">Maxsulot nomi</th>
+                            <th className="tushumlarTh">Maxsulot rangi</th>
+                            <th className="tushumlarTh">Maxsulot o`lchami</th>
+                            <th className="tushumlarTh">Maxsulot soni</th>
+                            <th className="tushumlarTh">Buyurtma holati</th>
                         </tr>
-                    ))}
-                </thead>
-                <tbody {...getTableBodyProps()}>
-                    {rows.map((row) => {
-                        prepareRow(row);
-                        return (
-                            <tr onClick={whenselected} {...row.getRowProps()}>
-                                {row.cells.map((cell) => (
-                                    <td className="Tableth tr" {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                                ))}
-                                <button className="Edit_btnOmbor">Edit</button>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
+                    </thead>
+
+                    <tbody>
+                        {buyurtmaMagazinData.map((element, value) => {
+                            return (
+                                <tr onClick={whenselected}>
+                                    <td> {element.maxsulot_nomi} </td>
+                                    <td> {element.maxsulot_rangi} </td>
+                                    <td> {element.maxsulot_olchami} </td>
+                                    <td> {element.maxsulot_soni} </td>
+                                    <td> {element.holati} </td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     )
 }

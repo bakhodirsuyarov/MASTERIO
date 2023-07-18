@@ -1,0 +1,9 @@
+.Buyurtmalartable {
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: left;
+    margin-left: 280px;
+    /* width: 1622px; */
+}

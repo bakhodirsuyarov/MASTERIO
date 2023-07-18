@@ -1,22 +1,22 @@
 import React from 'react'
-import './Whenselected.css'
-import buyurtmaMagazinData from '../../BuyurtmaMagzin/BuyurtmaMagazinData';
-import MahsulotlarRoyhati from '../MahsulotlarRoyhati/MahsulotlarRoyhati';
-import OmborgaBuyurtma from '../OmborgaBuyurtma/OmborgaBuyurtma';
+import buyurtmaMagazinData from '../../../BuyurtmaMagzin/BuyurtmaMagazinData';
 
-function Whenselected() {
+function Whenpressed() {
     return (
-        <div className='Whenselected'>
+        <div>
             <table className="BuurtmaMagazinTable">
                 <thead>
                     <tr className='Tr'>
-                        <th className="tushumlarTh">Maxsulot nomi</th>
-                        <th className="tushumlarTh">Razmeri</th>
-                        <th className="tushumlarTh">Rangi</th>
+                        <th className="tushumlarTh">Shartnoma</th>
+                        <th className="tushumlarTh"> nomi</th>
+                        <th className="tushumlarTh"> o’lchami</th>
+                        <th className="tushumlarTh"> rangi</th>
+                        <th className="tushumlarTh"> kirib kelish narxi </th>
+                        <th className="tushumlarTh">Valyutasi</th>
+                        <th className="tushumlarTh"> soni</th>
                         <th className="tushumlarTh">Joylashgan joylari</th>
-                        <th className="tushumlarTh">Soni</th>
-                        <th className="tushumlarTh">Sotish narxi</th>
-                        <th className="tushumlarTh">Kirib kelgan narxi</th>
+                        <th className="tushumlarTh"> narxi</th>
+                        <th className="tushumlarTh">Sanasi</th>
                     </tr>
                 </thead>
 
@@ -31,15 +31,16 @@ function Whenselected() {
                                 <td> {element.holati} </td>
                                 <td> {element.maxsulot_olchami} </td>
                                 <td> {element.holati} </td>
+                                <td> {element.maxsulot_olchami} </td>
+                                <td> {element.maxsulot_rangi} </td>
+                                <td> {element.holati} </td>
                             </tr>
                         );
                     })}
                 </tbody>
             </table>
-            <MahsulotlarRoyhati />
-            <OmborgaBuyurtma />
         </div>
     )
 }
 
-export default Whenselected
+export default Whenpressed
