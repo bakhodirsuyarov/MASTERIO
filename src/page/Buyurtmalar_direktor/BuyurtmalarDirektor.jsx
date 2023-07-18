@@ -6,74 +6,38 @@ import { useNavigate } from "react-router-dom";
 import BuyurtmaDirektorClick from "./BuyurtmaDirektorClick";
 
 const BuyurtmalarDirektor = () => {
-  const data = React.useMemo(() => fakeData, []);
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: "Shartnoma raqami",
-        accessor: "shartnoma_raqami",
-      },
-      {
-        Header: "Davlat nomi",
-        accessor: "davlat_nomi",
-      },
-      {
-        Header: "Zavod nomi",
-        accessor: "zavod_nomi",
-      },
-      {
-        Header: "Sanasi",
-        accessor: "sanasi",
-      },
-      {
-        Header: "Holati",
-        accessor: "holati",
-      },
-    ],
-    []
-  );
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    useTable({ columns, data });
-
+ 
   const navigate = useNavigate();
   useNavigate(<BuyurtmaDirektorClick />);
 
   return (
     <div>
     <div className="containerr">
-    <table {...getTableProps()} className="buyurtma_direktor_table">
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr className=".tr" {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th className="table_td_th th" {...column.getHeaderProps()}>
-                  {column.render("Header")}
-                </th>
-              ))}
+    <table className="buyurtma_direktor_table">
+          <thead>
+            <tr>
+              <th className="tushumlarTh">Shartnoma raqami</th>
+              <th className="tushumlarTh">Davlat nomi</th>
+              <th className="tushumlarTh">Shartnoma raqami</th>
+              <th className="tushumlarTh">Sanasi</th>
+              <th className="tushumlarTh">Holati</th>
             </tr>
-          ))}
-        </thead>
+          </thead>
 
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
-            prepareRow(row);
-            return (
-              <tr
-                className="tr"
-                {...row.getRowProps()}
-                onClick={() => navigate(`/buyurtmalar-paneli/${row.id}`)}
-              >
-                {row.cells.map((cell) => (
-                  <td className="table_td_th td" {...cell.getCellProps()}>
-                    {cell.render("Cell")}
-                  </td>
-                ))}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+          <tbody>
+            {fakeData.map((element, value) => {
+              return (
+                <tr>
+                  <td> {element.shartnoma_raqami} </td>
+                  <td> {element.davlat_nomi} </td>
+                  <td> {element.shartnoma_raqami} </td>
+                  <td> {element.sanasi} </td>
+                  <td> {element.holati} </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
     </div>
     
     </div>
