@@ -191,7 +191,7 @@ const tushumlarData = [
       {
         maxsulot_nomi: "IPhone 14 Pro MAX",
         summa: "120000$",
-        valuta: "USD",
+        valuta: "UZS",
         sana: "17.05.2023",
         dokon_nomi: "Apple Inc.",
       },
@@ -212,7 +212,7 @@ const tushumlarData = [
       {
         maxsulot_nomi: "IPhone 14 Pro MAX",
         summa: "120000$",
-        valuta: "USD",
+        valuta: "SOM",
         sana: "17.05.2023",
         dokon_nomi: "Apple Inc.",
       },
@@ -226,14 +226,14 @@ const tushumlarData = [
       {
         maxsulot_nomi: "Mercedes Bens",
         summa: "8900000$",
-        valuta: "USD",
+        valuta: "Evro",
         sana: "12.07.2022",
         dokon_nomi: "Mercedes-Benz",
       },
       {
         maxsulot_nomi: "IPhone 14 Pro MAX",
         summa: "120000$",
-        valuta: "USD",
+        valuta: "Yuan",
         sana: "17.05.2023",
         dokon_nomi: "Apple Inc.",
       },
@@ -247,7 +247,7 @@ const tushumlarData = [
       {
         maxsulot_nomi: "Mercedes Bens",
         summa: "8900000$",
-        valuta: "USD",
+        valuta: "UZS",
         sana: "12.07.2022",
         dokon_nomi: "Mercedes-Benz",
       },

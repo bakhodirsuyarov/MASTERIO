@@ -4,9 +4,27 @@ import "./BuyutmalarDirektor.css";
 import fakeData from "./BuyurtmalarDirektorData.js";
 import { useNavigate } from "react-router-dom";
 import BuyurtmaDirektorClick from "./BuyurtmaDirektorClick";
+import { useAddBuyurtmalarMutation, useBuyurtmalarQuery, useDeleteBuyurtmalarMutation, useUpdateBuyurtmalarMutation } from "../../BackendApi/apiPages/buyurtmaDirektorApi";
 
 const BuyurtmalarDirektor = () => {
- 
+  const { data, error, isLoading, isSuccess } = useBuyurtmalarQuery();
+  const [addBuyurtmalar, result] = useAddBuyurtmalarMutation();
+  const [updateBuyurtmalar] = useUpdateBuyurtmalarMutation();
+  const [deleteBuyurtmlar] = useDeleteBuyurtmalarMutation();
+  
+
+  // const handleAddBuyurtmalar = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     title,
+  //     description,
+  //     completed: false,
+  //     id: Math.random()
+  //   };
+  //   await addTask(task);
+  //   onClose();
+  // };
+
   const navigate = useNavigate();
   useNavigate(<BuyurtmaDirektorClick />);
 
